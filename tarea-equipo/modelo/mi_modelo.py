@@ -37,8 +37,9 @@ class Operaciones(object):
 
     def __init__(self, listado):
         self.listado_equipos = listado
-
+    # Método para ordenar por nombre
     def ordenar_nombre(self):
         return sorted(self.listado_equipos, key=lambda Equipo: Equipo.obtener_nombre())
+    # Método para ordenar por campeonato
     def ordenar_campeonatos(self):
         return sorted(self.listado_equipos, key=lambda Equipo: Equipo.obtener_campeonatos())
